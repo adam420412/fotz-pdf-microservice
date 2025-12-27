@@ -1,0 +1,10 @@
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+weasyprint==60.2
+PyPDF2==3.0.1
+Pillow==10.2.0
+reportlab==4.0.9
+markdown==3.5.2
+requests==2.31.0
+pydantic==2.5.3
+python-multipart==0.0.6
