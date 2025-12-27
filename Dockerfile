@@ -1,16 +1,14 @@
 # FOTZ PDF Microservice - Dockerfile dla Railway
-FROM python:3.11-slim
+FROM python:3.11-slim-bookworm
 
 # Instalacja zależności systemowych dla WeasyPrint
 RUN apt-get update && apt-get install -y \
     libpango-1.0-0 \
     libpangocairo-1.0-0 \
-    libgdk-pixbuf2.0-0 \
+    libgdk-pixbuf-2.0-0 \
     libffi-dev \
     shared-mime-info \
     libcairo2 \
-    libgirepository1.0-dev \
-    gir1.2-pango-1.0 \
     fonts-liberation \
     fonts-dejavu-core \
     && rm -rf /var/lib/apt/lists/*
